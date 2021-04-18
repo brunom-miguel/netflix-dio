@@ -11,7 +11,7 @@
 /*elementos base*/
 body{
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 header .container{
@@ -39,7 +39,7 @@ header nav a:hover{
 /*filme principal*/
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url(/img/capa-game2.jpg);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/capa-game2.jpg);
     height: 450px;
     background-size: cover;
     display: flex;
@@ -50,6 +50,8 @@ header nav a:hover{
 .filme-principal .descricao{
     margin-bottom: 40px;
     margin-top: 10px;
+    font-size: 12px;
+    text-align: justify;
 }
 
 .filme-principal .titulo{
@@ -83,4 +85,14 @@ header nav a:hover{
 
 .filme-principal .container{
     width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
 }
