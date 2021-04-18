@@ -11,7 +11,7 @@
 /*elementos base*/
 body{
     background: var(--preta);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: white;
 }
 header .container{
@@ -24,18 +24,81 @@ header .container{
 header .logo{
     margin-left: 5px;
     color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;
+    font-family: Helvetica, Times;
+    font-size: 20px;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
 }
 
 header nav a{
     text-decoration: none;
     color: #AAA;
     margin-right: 10px;
+    font-size: 12px;
 }
 header nav a:hover{
     color: #fff;
 }
+
+.usuario{
+    margin-right: 15px;
+}
+.usuario ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuario ul li a img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuario ul .dropdown-menu li{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+    padding-left: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 130px;
+}
+
+.usuario ul .dropdown-menu .foto-usuario a p{
+    margin-left: 5px;
+}
+
+.usuario ul .dropdown-menu .foto-usuario a p:hover{
+    text-decoration: white underline;
+}
+
+.usuario ul .dropdown-menu{
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    visibility: hidden;
+    right: 0;
+}
+
+.usuario ul li:hover ul{
+    visibility: visible;
+}
+
+.usuario ul li a img{
+    height: 30px;
+    border-radius: 3px;
+}
+
 /*filme principal*/
 .filme-principal{
     font-size: 16px;
