@@ -21,7 +21,7 @@
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <h2 class="logo"><span id="span-color">Favorite</span>Flix</h2>
             <nav class="primeira-nav">
                 <ul>
                     <li><a href="#">Inicio</a></li>
@@ -37,7 +37,7 @@
                             <img src="img/usuario1.JPG" alt="" srcset="">
                         </a>
                         <ul class="dropdown-menu">
-                            <li>
+                            <li id="usuario-2">
                                 <div class="foto-usuario">
                                     <a href="#">
                                         <img src="img/usuario2.JPG" alt="" srcset="">
@@ -45,7 +45,7 @@
                                     </a>
                                 </div>
                             </li>
-                            <li>
+                            <li id="usuario-3">
                                 <div class="foto-usuario">
                                     <a href="#">
                                         <img src="img/usuario3.JPG" alt="" srcset="">
@@ -53,7 +53,7 @@
                                     </a>
                                 </div>
                             </li>
-                            <li>
+                            <li id="usuario-4">
                                 <div class="foto-usuario">
                                     <a href="#">
                                         <img src="img/usuario4.JPG" alt="" srcset="">
@@ -61,29 +61,34 @@
                                     </a>
                                 </div>
                             </li>
-                            <li>
+                            <li id="trocar-usuario">
                                 <div class="foto-usuario">
                                     <a href="#">
-                                       <p>Manage Profiles</p>
+                                        <p>Trocar usuários</p>
                                     </a>
                                 </div>
                             </li>
                         </ul>
                     </li>
-                
+
                 </ul>
             </nav>
         </div>
         </div>
     </header>
     <main>
-        <div class="filme-principal">
+        <div id="filme-principal">
             <div class="container">
-                <h3 class="titulo">GAME OF THRONES</h3>
-                <p class="descricao">Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida, sete
-                    nobres famílias lutam pelo controle da mítica terra de Westeros, dividida depois de uma guerra. Num
-                    cenário que lembra a Europa medieval, reis, rainhas, cavaleiros e renegados usam todos os meios
-                    possíveis em um jogo político pela disputa do Trono de Ferro, o símbolo do poder absoluto.</p>
+                <h3 id="titulo">GAME OF THRONES</h3>
+                <div class="informacoes">
+                    <p id="detalhes-extras"><span id="avaliacao">84%</span><span id="ano">2011</span><span id="temporadas">8 temporadas</span></p>
+                    <p id="descricao">Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida,
+                        sete
+                        nobres famílias lutam pelo controle da mítica terra de Westeros, dividida depois de uma guerra.
+                        Num
+                        cenário que lembra a Europa medieval, reis, rainhas, cavaleiros e renegados usam todos os meios
+                        possíveis em um jogo político pela disputa do Trono de Ferro, o símbolo do poder absoluto.</p>
+                </div>
                 <div class="botoes">
                     <button role="button" class="botao">
                         <i class="fas fa-play"></i>
@@ -100,34 +105,34 @@
     <div class="carrosel-filmes">
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+                <img class='box-filme' id="poster-gameOfThrones" src='https://www.themoviedb.org/t/p/original/mQ9cyw1gfpK1M3a69cgXFHvWkih.jpg' alt='Game of Thrones' srcset='' onclick="selecionaGameOfThrones()"></img>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
+                <img class='box-filme' id="poster-grimm" src='https://www.themoviedb.org/t/p/original/5hC8CertBqHbXNPcfm1LZ18VcjD.jpg' alt='Grimm' srcset='' onclick="selecionaGrimm()"></img>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+                <img class='box-filme' id="poster-greys" src='https://www.themoviedb.org/t/p/original/1HAm7sxXu9eGVvs8BIAlkCKGaTd.jpg' alt='Grey's Anatomy' srcset='' onclick="selecionaGreys()"></img>"
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
+                <img class='box-filme' id="poster-supernatural" src='https://www.themoviedb.org/t/p/original/ovFzkkKknAo2SbM2DfOabxRvzmy.jpg' alt='Supernatural' srcset='' onclick="selecionaSupernatural()"></img>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+                <img class='box-filme' id="poster-Walking" src='https://www.themoviedb.org/t/p/original/owjSPGHbtgTiC34qvbIAyTViwur.jpg' alt='The Walking Dead' srcset='' onclick="selecionaWalking()"></img>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+                <img class='box-filme' id="poster-vikings" src='https://www.themoviedb.org/t/p/original/eO2pyluU9L4SgpN60Jk5MDyX68T.jpg' alt='Vikings' srcset='' onclick="selecionaVikings()"></img>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+                <img class='box-filme' id="poster-house" src='https://www.themoviedb.org/t/p/original/teFg9jM4s0RLW6Pvd3YH9cDngIR.jpg' alt='Dr. House' srcset=''></img>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+                <img class='box-filme' id="poster-suits" src='https://www.themoviedb.org/t/p/original/ubEYUaE1EOBnSgb1OteAeGJP1E5.jpg' alt='Suits' srcset=''></img>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+                <img class='box-filme' id="poster-friends" src='https://www.themoviedb.org/t/p/original/cOkRLttsxWTtJJCE6HPPpBzS6tk.jpg' alt='Friends' srcset=''></img>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
+                <img class='box-filme' id="poster-himym" src='https://www.themoviedb.org/t/p/original/2Xtx5wO9jvAx8PyD6FhHEpmzyVU.jpg' alt='How I Met Your Mother' srcset=''></img>
             </div>
         </div>
     </div>

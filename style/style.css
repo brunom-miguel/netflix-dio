@@ -1,6 +1,9 @@
 :root{
-    --vermelho: #E50914;
+    --backColor: #1a0707;
+    --verde: #800900;
     --preta: #141414;
+    --cinza: rgb(202, 196, 188);
+
 }
 
 *{
@@ -8,24 +11,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.logo #span-color{
+    color: var(--cinza);
+}
+
 /*elementos base*/
 body{
-    background: var(--preta);
+    background: var(--backColor);
     font-family: Helvetica, sans-serif;
     color: white;
 }
+
 header .container{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 50px;
 }
 
 header .logo{
     margin-left: 5px;
-    color: var(--vermelho);
+    color: var(--verde);
     font-family: Helvetica, Times;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 header nav ul{
@@ -40,7 +50,7 @@ header nav a{
     text-decoration: none;
     color: #AAA;
     margin-right: 10px;
-    font-size: 12px;
+    font-size: 13px;
 }
 header nav a:hover{
     color: #fff;
@@ -59,6 +69,17 @@ header nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.usuario ul .dropdown-menu #usuario-2{
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.usuario ul .dropdown-menu #trocar-usuario{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .usuario ul .dropdown-menu li{
@@ -100,9 +121,9 @@ header nav a:hover{
 }
 
 /*filme principal*/
-.filme-principal{
+#filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(../img/capa-game2.jpg);
+    background: linear-gradient(280deg, rgba(0,0,0,.50),rgba(0,0,0,1)100%), url(../img/capa-game2.jpg);
     height: 450px;
     background-size: cover;
     display: flex;
@@ -110,14 +131,23 @@ header nav a:hover{
     justify-content: center;
     align-items: flex-start;
 }
-.filme-principal .descricao{
+#filme-principal #descricao{
     margin-bottom: 40px;
     margin-top: 10px;
     font-size: 12px;
     text-align: justify;
 }
 
-.filme-principal .titulo{
+.informacoes #detalhes-extras{
+    margin: 15px 0;
+}
+#avaliacao{
+    color: rgb(0, 66, 0);
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#filme-principal #titulo{
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
@@ -146,7 +176,7 @@ header nav a:hover{
     margin-left: 20px;
 }
 
-.filme-principal .container{
+#filme-principal .container{
     width: 70%;
 }
 
@@ -158,4 +188,8 @@ header nav a:hover{
 
 .carrosel-filmes{
     margin-top: 5px;
+}
+
+.carrosel-filmes .item{
+    cursor: pointer;
 }
