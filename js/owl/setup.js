@@ -4,13 +4,13 @@ $('.owl-carousel').owlCarousel({
     nav:false,
     responsive:{
         0:{
-            items:1
+            items:3
         },
         600:{
             items:3
         },
         1000:{
-            items:8
+            items:6
         }
     }
 });
@@ -217,4 +217,68 @@ function selecionaVikings(){
     divDescricaoFilme.innerHTML = "<p class='descricao'>" + vikings.descricao + "</p>"
 
     divTituloFilme.innerHTML = "<h3 id='titulo'>"+ vikings.nome +"</h3>"
+}
+function selecionaHouse(){
+    var divFundoFilme = document.getElementById("filme-principal");
+    var divAvaliacaoFilme = document.getElementById("detalhes-extras");
+
+    var divDescricaoFilme = document.getElementById("descricao");
+
+    var divTituloFilme = document.getElementById("titulo");
+
+    divFundoFilme.style.backgroundImage = `url(${house.fundo})`;
+    
+    divAvaliacaoFilme.innerHTML = "<p id='detalhes-extras'><span id='avaliacao'>" + house.avaliacao + "</span><span id='ano'>"+ house.ano +"</span><span id='temporadas'>"+ house.temporadas +"</span></p>"
+
+    divDescricaoFilme.innerHTML = "<p class='descricao'>" + house.descricao + "</p>"
+
+    divTituloFilme.innerHTML = "<h3 id='titulo'>"+ house.nome +"</h3>"
+}
+function selecionaSuits(){
+    var divFundoFilme = document.getElementById("filme-principal");
+    var divAvaliacaoFilme = document.getElementById("detalhes-extras");
+
+    var divDescricaoFilme = document.getElementById("descricao");
+
+    var divTituloFilme = document.getElementById("titulo");
+
+    divFundoFilme.style.backgroundImage = `url(${suits.fundo})`;
+    
+    divAvaliacaoFilme.innerHTML = "<p id='detalhes-extras'><span id='avaliacao'>" + suits.avaliacao + "</span><span id='ano'>"+ suits.ano +"</span><span id='temporadas'>"+ suits.temporadas +"</span></p>"
+
+    divDescricaoFilme.innerHTML = "<p class='descricao'>" + suits.descricao + "</p>"
+
+    divTituloFilme.innerHTML = "<h3 id='titulo'>"+ suits.nome +"</h3>"
+}
+function selecionaFriends(){
+    var divFundoFilme = document.getElementById("filme-principal");
+    var divAvaliacaoFilme = document.getElementById("detalhes-extras");
+
+    var divDescricaoFilme = document.getElementById("descricao");
+
+    var divTituloFilme = document.getElementById("titulo");
+
+    divFundoFilme.style.backgroundImage = `url(${friends.fundo})`;
+    
+    divAvaliacaoFilme.innerHTML = "<p id='detalhes-extras'><span id='avaliacao'>" + friends.avaliacao + "</span><span id='ano'>"+ friends.ano +"</span><span id='temporadas'>"+ friends.temporadas +"</span></p>"
+
+    divDescricaoFilme.innerHTML = "<p class='descricao'>" + friends.descricao + "</p>"
+
+    divTituloFilme.innerHTML = "<h3 id='titulo'>"+ friends.nome +"</h3>"
+}
+function selecionaHIMYM(){
+    var divFundoFilme = document.getElementById("filme-principal");
+    var divAvaliacaoFilme = document.getElementById("detalhes-extras");
+
+    var divDescricaoFilme = document.getElementById("descricao");
+
+    var divTituloFilme = document.getElementById("titulo");
+
+    divFundoFilme.style.backgroundImage = `url(${himym.fundo})`;
+    
+    divAvaliacaoFilme.innerHTML = "<p id='detalhes-extras'><span id='avaliacao'>" + himym.avaliacao + "</span><span id='ano'>"+ himym.ano +"</span><span id='temporadas'>"+ himym.temporadas +"</span></p>"
+
+    divDescricaoFilme.innerHTML = "<p class='descricao'>" + himym.descricao + "</p>"
+
+    divTituloFilme.innerHTML = "<h3 id='titulo'>"+ himym.nome +"</h3>"
 }

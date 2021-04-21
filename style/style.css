@@ -130,6 +130,7 @@ header nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
 }
 #filme-principal #descricao{
     margin-bottom: 40px;
@@ -142,7 +143,7 @@ header nav a:hover{
     margin: 15px 0;
 }
 #avaliacao{
-    color: rgb(0, 66, 0);
+    color: rgb(10, 158, 10);
     font-weight: bold;
     margin-right: 20px;
 }
