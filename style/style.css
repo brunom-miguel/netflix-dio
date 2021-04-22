@@ -1,5 +1,5 @@
 :root{
-    --backColor: #1a0707;
+    --backColor: rgb(26, 7, 7);
     --verde: #800900;
     --preta: #141414;
     --cinza: rgb(202, 196, 188);
@@ -38,12 +38,12 @@ header .logo{
     font-size: 30px;
 }
 
+
 header nav ul{
     list-style: none;
-}
-
-header nav ul li{
-    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header nav a{
@@ -63,6 +63,7 @@ header nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: default;
 }
 
 .usuario ul li a img{
@@ -139,7 +140,7 @@ header nav a:hover{
     text-align: justify;
 }
 
-.informacoes #detalhes-extras{
+#informacoes #detalhes-extras{
     margin: 15px 0;
 }
 #avaliacao{
@@ -147,11 +148,21 @@ header nav a:hover{
     font-weight: bold;
     margin-right: 20px;
 }
+#ano{
+    font-weight: bold;
+    margin-right: 20px;
+}
+#temporadas{
+    font-weight: bold;
+}
 
 #filme-principal #titulo{
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+#informacoes{
+    visibility: hidden;
 }
 
 .botao{
@@ -171,6 +182,10 @@ header nav a:hover{
 
 .botao i{
     margin-right: 8px;
+}
+.botoes .botao a{
+    height: 30px;
+    width: 40px;
 }
 
 .container{
