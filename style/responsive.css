@@ -1,11 +1,60 @@
+@media screen and (max-width: 952px) {
+    header .container .primeira-nav ul li a{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    header .container .primeira-nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,.8);
+        top: 50px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 999;
+    }
+    header .container .primeira-nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    header .container .primeira-nav ul li a{
+        font-size: 14px;
+    }
+    header .container .primeira-nav ul li a:hover{
+        background: none;
+    }
+    header .container .primeira-nav #check:checked ~  ul{
+        right: 0%;
+    }
+}
+
+
 @media screen and (max-width:700px){
+    #filme-principal #titulo{
+        margin-top: 15px;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+    #filme-principal #descricao{
+        margin-bottom: 25px;
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: justify;
+    }
+    
     header .container{
         display: flex;
 
     }
 
     .botao{
-        display: flex;
+        display: block;
         flex-direction: column;
         margin-top: 5px;
         width: 190px;
@@ -30,12 +79,12 @@
 
 @media screen and (max-width:450px){
     #filme-principal #titulo{
-        margin-top: 15%;
+        margin-top: 20px;
         font-size: 20px;
         font-family: 'Trebuchet MS', Arial, sans-serif;
     }
     #filme-principal #descricao{
-        margin-bottom: 25px;
+        margin-bottom: 10px;
         margin-top: 10px;
         font-size: 10px;
         text-align: justify;
@@ -44,12 +93,28 @@
         margin: 15px 0;
         font-size: 10px;
     }
+    .botoes{
+        margin-bottom: 30px;
+    }
 
 }
 
-
-@media screen and (min-width:1000px){
-    #descricao{
-        width: 50%;
+@media screen and (max-width:300px) {
+    #filme-principal #titulo{
+        margin-top: 20px;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', Arial, sans-serif;
     }
+    #descricao{
+        display: none;
+    }
+
+    #informacoes #detalhes-extras{
+        margin: 15px 0 135px 0;
+        font-size: 10px;
+    }
+    .botoes{
+        margin-bottom: 30px;
+    }
+    
 }

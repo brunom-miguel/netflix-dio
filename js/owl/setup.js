@@ -123,7 +123,7 @@ function selecionaGrimm(){
 
     divInformacoes.style.visibility = "hidden";
 
-    divFundoFilme.style.backgroundImage = `url(${grimm.fundo})`;
+    divFundoFilme.style.backgroundImage = `url(${grimm.fundo})`
     
     divAvaliacaoFilme.innerHTML = "<p id='detalhes-extras'><span id='avaliacao'>" + grimm.avaliacao + "</span><span id='ano'>"+ grimm.ano +"</span><span id='temporadas'>"+ grimm.temporadas +"</span></p>"
 
